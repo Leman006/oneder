@@ -1,0 +1,708 @@
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+header{
+    background:linear-gradient(#0000006d,#13111166), url(https://preview.colorlib.com/theme/oneder/images/hero_1.jpg)center/cover;
+    height: 100vh;
+}
+
+.all-nav{
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all-nav a{
+    text-decoration: none;
+}
+
+.logo a{
+    color: white;
+    text-transform: uppercase;
+    font: 900 30px "Work Sans";
+}
+
+.all-nav ul{
+    display: flex;
+}
+
+.all-nav li a{
+    padding: 10px 0;
+    margin: 0 20px;
+    font: 400 16px Roboto, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize;
+    transition: .3s;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 210px;
+    height: 180px;
+}
+
+
+.dropdown-content a {
+    padding: 13px 20px !important;
+    text-decoration: none;
+    display: block;
+    color: black !important;
+    height: 45px;
+    margin: 0 !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.all-nav li:first-child a{
+    color: white;
+}
+
+.all-nav li a:hover{
+    color: white;
+}
+
+.all-nav li a i{
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+header hr{
+    height: 1px;
+    background-color: #cccccc56;
+    border: none;
+}
+
+
+.head-text{
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-text h1{
+    font: 900 48px "Work Sans";
+    line-height: 57px;
+    color: white;
+    width: 730px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.head-text a, .about-text a{
+    border-radius: 30px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    text-transform: capitalize;
+    padding: 13px 30px;
+    font: 400 16px "Work Sans";
+    margin-top: 48px;
+    transition: .3s !important;
+}
+
+
+.head-text a:hover, .about-text a:hover{
+    background-color: black;
+}
+
+.about{
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+h2{
+    color: rgb(0, 123, 255);
+    font: 900 40px "Work Sans";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.about-content img{
+    width: 540px;
+    height: 405px;
+}
+
+.about-text{
+    width: 475px;
+}
+
+.about-text h3{
+    color: black;
+    font: 500 28px "Work Sans";
+    margin-bottom: 20px;
+}
+
+.about-text p, .about-text ul li{
+    color: rgb(128, 128, 128);
+    font: 400 16px "Work Sans";
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.about-text ul{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.about-text ul i{
+    color: rgb(113, 189, 66);
+    margin-right: 15px;
+}
+
+.team{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.team-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.team-text p{
+    font: 300 20px "Work Sans";
+    line-height: 34px;
+    color: rgb(128, 128, 128);
+    text-align: center;
+}
+
+.staff{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-card{
+    margin-bottom: 24px;
+}
+
+.team-image{
+    background: url(https://preview.colorlib.com/theme/oneder/images/person_5.jpg)center/cover;
+    width: 255px;
+    overflow: hidden;
+    height: 255px;
+}
+
+.team-card img{
+    width: 255px;
+}
+
+.blue_col{
+    background: #007bff;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+    gap: 10px;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+
+.blue_col i{
+    margin-bottom: 12px;
+    color: white;
+}
+
+.team-image:hover .blue_col{
+    transform: translateX(0);
+}
+
+
+.team-card h5{
+    font: 500 19px "Work Sans";
+    margin-top: 16px;
+    text-align: left;
+}
+
+.team-card p{
+    font: 400 13px "Work Sans";
+    color: rgb(128, 128, 128);
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.services{
+    background-color: rgb(247, 249, 250);
+    padding: 80px 0;
+}
+
+.services-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.service{
+    width: 350px;
+    margin-bottom: 54px;
+}
+
+.service i{
+    font-size: 48px;
+    color: rgb(0, 123, 255);
+    margin-bottom: 15px;
+}
+
+.service h3{
+    font: 500 20px "Work Sans";
+    margin-bottom: 8px;
+}
+
+.service p{
+    font: 400 16px  "Work Sans";
+    line-height: 26px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 16px;
+}
+
+.service a, .blog-card a, .contact-card a{
+    font: 400 16px "Work Sans";
+    color: rgb(0, 123, 255);
+    transition: .3s;
+}
+
+.service a:hover, .blog-card a:hover, .contact-card a:hover{
+    color:#0056b3
+}
+
+.testimonials{
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonials p{
+    color: grey;
+    font: 400 1.5rem "Work Sans";
+    font-style: italic;
+    margin-top: 30px;
+    text-align: center;
+    width: 800px;
+    line-height: 1.7;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.author img{
+    width: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.author p{
+    margin: 0;
+    width: auto;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: rgb(138, 138, 138);
+}
+
+.testimonials i{
+    font-size: 60px;
+    margin-top: 20px;
+    color: gray;
+}
+
+
+.pricing{
+    background-color: rgb(247, 249, 250);
+    padding: 80px 0;
+}
+
+.pricing-cards{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.pricing-card{
+    width: 350px;
+    height: 565px;
+    background-color: white;
+    padding: 30px;
+}
+
+.pricing-card h4, h5{
+    text-align: center;
+}
+
+.pricing-card h4{
+    font: 500 28px "Work Sans", sans-serif;
+    line-height: 33.6px;
+    margin-bottom: 16px;
+}
+
+.pricing-card h5{
+    font: 400 16px "Work Sans";
+    line-height: 27.2px;
+    color: rgb(204, 204, 204);
+    margin-bottom: 28px;
+}
+
+.pricing-card h5 b{
+    font: 400 48px "Work Sans";
+    color: rgb(0, 123, 255);
+}
+
+.pricing-card ul{
+    margin-bottom: 60px;
+}
+
+.pricing-card i{
+    color: rgb(113, 189, 66);
+    margin-right: 12px;
+}
+
+.pricing-card ul li{
+    font: 400 16px  "Work Sans";
+    color: rgb(128, 128, 128);
+    margin-bottom: 23px;
+}
+
+.remove{
+    color:rgb(223, 226, 230) !important;
+    text-decoration: line-through;
+}
+
+.remove i{
+    color: rgb(223, 226, 230);
+}
+
+.pricing-button, .blue-button{
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-card a{
+    border-radius: 30px;
+    background-color: #6c757d;
+    color: white;
+    padding: 12px 30px;
+    text-transform: capitalize;
+    font: 400 16px "Work Sans";
+    transition: 0.3s;
+}
+
+.pricing-card a:hover{
+    background-color: #5a6268;
+}
+
+.blue-button a{
+    background-color: rgb(0, 123, 255);
+    transition: 0.3s;
+}
+
+.blue-button a:hover{
+    background-color: black;
+}
+
+.faq{
+    background-color: rgb(247, 249, 250);
+    padding: 80px 0;
+}
+
+.questions{
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.question{
+    width: 540px;
+    margin-bottom: 48px;
+}
+
+.question h3{
+    font: 500 20px  "Work Sans";
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.question p{
+    font: 400 16px  "Work Sans";
+    color: rgb(128, 128, 128);
+    line-height: 27px;
+}
+
+.section7{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section7 img{
+    width: 540px;
+    height: 405px;
+}
+
+.blog{
+    padding: 80px 0;
+}
+
+.blog-cards{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-card{
+    width: 350px;
+    height: 586px;
+}
+
+.blog-card img{
+    margin-bottom: 30px;
+}
+
+.blog-card h3{
+    margin-bottom: 12px;
+    font: 500 20px  "Work Sans";
+    line-height: 24px;
+}
+
+.blog-card span{
+    color: #5a6268;
+    font: 400 14px  "Work Sans";
+    line-height: 24px;
+}
+
+.blog-card p{
+    margin-bottom: 16px;
+    margin-top: 24px;
+    font: 400 16px  "Work Sans";
+    color:  rgb(128, 128, 128);
+    line-height: 27px;
+}
+
+.contact{
+    padding: 80px 0;
+    background-color: rgb(247, 249, 250);
+}
+
+.contact-cards{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.contact-card i{
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #0056b3;
+}
+
+.contact-card p{
+    font: 400 16px "Work Sans";
+    color: rgb(128, 128, 128);
+    line-height: 27px;
+    text-align: center;
+}
+
+.form{
+    width: 1110px;
+    margin-top: 80px;
+    padding: 48px;
+    height: 750px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.form h3{
+    margin-bottom: 48px;
+    font: 500 24px "Work Sans";
+}
+
+.form label{
+    font: 400 16px "Work Sans";
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    height: 181px;
+    font: 400 1rem "Work Sans";
+}
+
+
+.form-name {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-name label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-name input, .form-name textarea {
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+.form-name input{
+    height: 43px;
+}
+
+.form-row .form-name {
+    width: 48%;
+}
+
+.form button{
+    border-radius: 30px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    text-transform: capitalize;
+    padding: 13px 30px;
+    font: 400 16px "Work Sans";
+    margin-top: 48px;
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+}
+
+.form button:hover{
+    background-color: black;
+}
+
+footer{
+    padding: 128px 0;
+    background-color: #333333;
+}
+
+.foot-columns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.foot-column h3{
+    margin-bottom: 24px;
+    font: 500 16px "Work Sans";
+    color: white;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font: 400 16px "Work Sans";
+    color:  rgb(115, 115, 115);
+    line-height: 27px;
+}
+
+footer p i{
+    color: rgb(219, 53, 69);
+    margin: 5px;
+}
+
+footer p a{
+    color: rgb(153, 153, 153);
+    margin-left: 5px;
+}
+
+.foot-column p{
+    width: 326px;
+    font: 400 16px "Work Sans";
+    color:  rgb(115, 115, 115);
+    line-height: 27px;
+    margin-top: 0;
+}
+
+.foot-column ul li{
+    margin-bottom: 15px;
+}
+
+.foot-column ul li a{
+    color: #999999;
+    font: 400 16px "Work Sans";
+}
+
+.foot-column i{
+    color: rgb(115, 115, 115);
+    padding-right: 30px;
+}
+
+.foot-column input{
+    width: 155px;
+    height: 43px;
+    padding: 6px 12px;
+    font: 400 1rem  "Work Sans";
+    border-radius: 30px;
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.foot-column button{
+    width: 101px;
+    height: 43px;
+    padding: 10px 30px;
+    font: 400 1rem  "Work Sans";
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: white;
+    border-color: #0056b3;
+    cursor: pointer;
+}
+
+.foot-column button:hover{
+    border-color:#333333;
+}
+
+footer a, .foot-column a i{
+    transition: .3s;
+}
+
+footer a:hover, .foot-column a:hover, .foot-column a i:hover{
+    color: white;
+}
