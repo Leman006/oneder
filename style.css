@@ -1,5 +1,5 @@
 .container{
-    width: 75%;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@ header{
 
 .all-nav li a{
     padding: 10px 0;
-    margin: 0 20px;
+    margin: 0 16px;
     font: 400 16px Roboto, sans-serif;
     color: rgba(255, 255, 255, 0.7);
     text-transform: capitalize;
@@ -100,7 +100,7 @@ header hr{
     font: 900 48px "Work Sans";
     line-height: 57px;
     color: white;
-    width: 730px;
+    max-width: 730px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -141,8 +141,8 @@ h2{
 }
 
 .about-content img{
-    width: 540px;
-    height: 405px;
+    max-width: 540px;
+    max-height: 405px;
 }
 
 .about-text{
@@ -253,7 +253,6 @@ h2{
 
 .services-cards{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 80px;
@@ -350,7 +349,6 @@ h2{
 
 .pricing-card{
     width: 350px;
-    height: 565px;
     background-color: white;
     padding: 30px;
 }
@@ -464,6 +462,10 @@ h2{
     justify-content: space-between;
 }
 
+.section7 .service{
+    width: 255px;
+}
+
 .section7 img{
     width: 540px;
     height: 405px;
@@ -481,7 +483,6 @@ h2{
 
 .blog-card{
     width: 350px;
-    height: 586px;
 }
 
 .blog-card img{
@@ -705,4 +706,182 @@ footer a, .foot-column a i{
 
 footer a:hover, .foot-column a:hover, .foot-column a i:hover{
     color: white;
+}
+
+@media(max-width:1250px){
+    .container { width: 95%; }
+}
+
+@media(max-width:1200px){
+    .about-content img, .section7 img{
+        width: 440px;
+        height: 337px;
+    }
+    .about-text{
+        width: 400px;
+    }
+    .team-card{
+        padding: 0 6px;
+    }
+    .service{
+        width: 450px;
+    }
+    .pricing-card{
+        margin: 0 6px;
+    }
+    .question{
+        width: 450px;
+        margin-inline: 4px;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+@media(max-width:1025px){
+    .about-content{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .service{
+        width: 350px;
+    }
+    .testimonials p{
+        width: 100%;
+    }
+    .pricing-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pricing-card{
+        width: 290px;
+    }
+    .pricing-card{width: 350px; margin-bottom: 14px;}
+    .questions{
+        justify-content: center;
+    }
+    .section7{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section7 img{
+        width: 540px;
+        height: 405px;
+    }
+    .section7 .service{
+        width: 100%;
+    }
+    .blog-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .blog-card{
+        margin-inline: 6px;
+        margin-bottom: 16px;
+    }
+    .foot-column{
+        margin-inline: 6px;
+    }
+    .foot-column p{
+        width: 250px;
+    }
+}
+
+@media(max-width:843px){
+    .staff{
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:791px){
+    .all-nav{
+        flex-direction: column;
+    }
+    .all-nav ul{
+        flex-direction: column;
+    }
+    .all-nav ul li{
+        margin-top: 6px;
+    }
+    .head-text h1{
+        font-size: 2em;
+    }
+    .head-text{
+        height: 300px;
+    }
+    .staff{
+        justify-content: center;
+    }
+    .services-cards{
+        justify-content: center;
+    }
+    .question{
+        width: 100%;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+    .form-row .form-name{
+        width: 100%;
+    }
+    .foot-columns{
+        flex-wrap: wrap;
+    }
+    .foot-column{
+        margin-block: 10px;
+    }
+}
+
+@media(max-width:641px){
+    .section7 img{
+        width: 440px;
+        height: 337px;
+    }
+    .contact-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-card{
+        margin-block: 10px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:465px){
+    .about-content img{
+        width: 335px;
+        height: 251px;
+    }
+    .about-text{
+        width: 340px;
+    }
+    .about h2, .team-text h2, .services h2, .testimonials h2, .pricing h2, .faq h2, .blog h2, .contact h2{
+        font-size: 2em;
+    }
+    .testimonials p{
+        font-size: 20px;
+    }
+    .pricing-card h5 b{
+        font-size: 40px;
+    }
+    .section7 img{
+        width: 313px;
+        height: 234px;
+    }
+}
+
+@media(min-width:320px) and (max-width:375px){
+    .about-text{
+        width: 300px;
+    }
+    .about-content img{
+        width: 290px;
+        height: 219px;
+    }
+    .section7 img{
+        width: 276px;
+        height: 207px;
+    }
 }
